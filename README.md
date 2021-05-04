@@ -3,7 +3,7 @@
 This is a collection of projects from an independent study in interactive visualizations.
 
 
-## p5 sketches
+### p5 sketches
 
 ![image](https://user-images.githubusercontent.com/63130693/117043700-6dc21180-acc2-11eb-8d71-72bb223a577b.png)
 
@@ -13,7 +13,10 @@ Give it a try [here](https://aecollier.github.io/portfolio/live_sketches/)!
 
 You can find other sketches I've done (some working, some not) on [my OpenProcessing page](https://openprocessing.org/user/255658?view=activity).
 
-## D3 Squirrel Census Modeling
+
+### D3 Squirrel Census Modeling
+
+![image](https://github.com/aecollier/portfolio/blob/28b0f277a6547f8af2f485195bd44c5c88e3f68b/sqrl_heatmap.jpg)
 
 This is the feature project from learning D3.js, an open-source data viz tool. Read about the exploration [here](https://observablehq.com/@aecollier/sqrrules), and see a number of interactive visualizations about squirrels in Central Park! 
 
