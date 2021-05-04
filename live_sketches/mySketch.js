@@ -1,3 +1,5 @@
+// need acceleration/velocity decay, transparency?, color
+
 let particles = [];
 let attractor;
 let padding;
@@ -34,8 +36,8 @@ function draw() {
 	fill('white')
 	noStroke();
 	textSize(15)
-	text("Press any key to clear the screen", width-250, 30)
-	text("Click and hold to repel the particles", width-250, 50)
+	text("Press any key to clear the screen", width/2-((width/2)*0.1), 30)
+	text("Click and hold to repel the particles", width/2-((width/2)*0.1), 50)
 }
 function keyPressed() {
 	clear();
