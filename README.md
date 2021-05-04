@@ -4,6 +4,9 @@
 https://openprocessing.org/user/255658?view=activity
 
 ![image](https://user-images.githubusercontent.com/63130693/117043700-6dc21180-acc2-11eb-8d71-72bb223a577b.png)
+Don't just take my word for it, give it a try!
+https://aecollier.github.io/portfolio/live_sketches/
+
 
 **everything after this line is reference material for learning markdown**
 
