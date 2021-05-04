@@ -1,4 +1,7 @@
-# Welcome to GitHub Pages
+# Creative Coding Portfolio
+
+This is a collection of projects from an independent study in interactive visualizations.
+
 
 ## p5 sketches
 
@@ -6,9 +9,13 @@
 
 This is a force simulation, where the mouse has a "gravitational" pull on the particles, which change color based on their velocity.
 
-Give it a [try](https://aecollier.github.io/portfolio/live_sketches/)!
+Give it a try [here](https://aecollier.github.io/portfolio/live_sketches/)!
 
 You can find other sketches I've done (some working, some not) on [my OpenProcessing page](https://openprocessing.org/user/255658?view=activity).
+
+## D3 Squirrel Census Modeling
+
+This is the feature project from learning D3.js, an open-source data viz tool. Read about the exploration [here](https://observablehq.com/@aecollier/sqrrules), and see a number of interactive visualizations about squirrels in Central Park! 
 
 
 
