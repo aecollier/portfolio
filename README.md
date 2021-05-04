@@ -1,4 +1,4 @@
-# Creative Coding Portfolio
+## Creative Coding Portfolio
 
 This is a collection of projects from an independent study in interactive visualizations.
 
@@ -18,7 +18,9 @@ You can find other sketches I've done (some working, some not) on [my OpenProces
 
 ![image](https://github.com/aecollier/portfolio/blob/28b0f277a6547f8af2f485195bd44c5c88e3f68b/sqrl_heatmap.jpg)
 
-This is the feature project from learning D3.js, an open-source data viz tool. Read about the exploration [here](https://observablehq.com/@aecollier/sqrrules), and see a number of interactive visualizations about squirrels in Central Park! 
+This is the feature project from learning D3.js, an open-source data viz tool. Interact with it [here](https://observablehq.com/@aecollier/sqrrules), and a number of other interactive visualizations about squirrels in Central Park! 
+
+### Touchdesigner Explorations
 
 
 
