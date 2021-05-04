@@ -8,7 +8,7 @@ This is a force simulation, where the mouse has a "gravitational" pull on the pa
 
 Give it a [try](https://aecollier.github.io/portfolio/live_sketches/)!
 
-You can find [other sketches](https://openprocessing.org/user/255658?view=activity) (some working, some not) on my OpenProcessing page:
+You can find other sketches I've done (some working, some not) on [my OpenProcessing page](https://openprocessing.org/user/255658?view=activity).
 
 
 
