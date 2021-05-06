@@ -16,7 +16,7 @@ You can find other sketches I've done (some working, some not) on [my OpenProces
 
 ### D3 Squirrel Census Modeling
 
-![image](https://github.com/aecollier/portfolio/blob/28b0f277a6547f8af2f485195bd44c5c88e3f68b/sqrl_heatmap.jpg)
+![image](https://user-images.githubusercontent.com/63130693/117368089-e8805d80-ae77-11eb-9d86-0b7debd97bcc.png)
 
 This is the feature project from learning D3.js, an open-source data viz tool. Interact with it [here](https://observablehq.com/@aecollier/sqrrules), and a number of other interactive visualizations about squirrels in Central Park! 
 
