@@ -21,11 +21,8 @@ You can find other sketches I've done (some working, some not) on [my OpenProces
 This is the feature project from learning D3.js, an open-source data viz tool. Interact with it [here](https://observablehq.com/@aecollier/sqrrules), and a number of other interactive visualizations about squirrels in Central Park! 
 
 ### Touchdesigner Explorations
----
-driveId: 1FctMoRXR80eq5yMRaj_9cKEkeaLu5NuF/preview
----
 
-{% include googleDrivePlayer.html id=page.driveID %}
+{% include googleDrivePlayer.html id=1FctMoRXR80eq5yMRaj_9cKEkeaLu5NuF/preview %}
 
 **everything after this line is reference material for learning markdown**
 
