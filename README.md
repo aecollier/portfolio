@@ -28,3 +28,8 @@ driveId: 1FctMoRXR80eq5yMRaj_9cKEkeaLu5NuF/preview
 
 {% include googleDrivePlayer.html id= page.driveId %}
 
+Here's the network used to make the animation:
+
+![image](https://user-images.githubusercontent.com/63130693/117874412-c743b680-b255-11eb-8c77-8f79815c0b44.png)
+
+Thanks for clicking through!
