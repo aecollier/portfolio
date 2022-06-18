@@ -20,18 +20,3 @@ You can find other sketches I've done (some working, some not) on [my OpenProces
 
 This is my feature project from learning D3.js, an open-source data viz tool. Interact with it [here](https://observablehq.com/@aecollier/sqrrules), and a number of other interactive visualizations about squirrels in Central Park! 
 
-## Touchdesigner Explorations
-
-This is GPU shader code in touchdesigner, a motion graphics and visual programming language.
-
-driveId: 1qSMHqmUwE2GwphoPEltfPNtAtnEnJdjW/preview
-
-{% include googleDrivePlayer.html id= page.driveId %}
-
-Here's the network used to make the animation:
-
-![image](https://user-images.githubusercontent.com/63130693/117874412-c743b680-b255-11eb-8c77-8f79815c0b44.png)
-
-It's made up of GLSL code that uses random noise as inputs, some feedback loops, and a custom GLSL point sprite material.
-
-Thanks for clicking through!
