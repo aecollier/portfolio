@@ -46,39 +46,46 @@ def pick_quote(html):
         quote += ' '+author.text.strip()
     if work:
         quote += ' '+work.text.strip()
-
-    # with open('daily_quote.txt','w', encoding="utf-8") as fp:
-    #     fp.write(quote)
     return(quote)
 
+def get_recent_read():
+    #title = input("Enter a book you've enjoyed recently, or hit enter for a random quote: ")
+    #if not title:
+    #    return ''
+    title = 'dune'
+    browser = webdriver.Chrome(executable_path=r'C:/Users/abiga/Documents/AVC/chromedriver.exe')
+    browser.get('https://www.amazon.com/')
+    time.sleep(3)
+    # first set search parameters to books because that's what we're after
+    filter_books = browser.find_element_by_xpath("//select[@id='searchDropdownBox']")
+    filter_books.click()
+    browser.find_element_by_xpath("//option[@value='search-alias=stripbooks']").click()
+    time.sleep(3)
 
-# def send_email(random_word, quote):
-#     reciever = input("Please enter your email address, or hit enter to print today's quote! ")
-#     if reciever:
-#         with open('daily_quote.txt', 'r', encoding="utf-8") as fp:
-#             msg = EmailMessage()
-#             msg.set_content(fp.read())
-#         msg['Subject'] = f"Today's word is {random_word}"
-#         msg['From'] = 'dailyquotesac@gmail.com'
-#         msg['To'] = reciever
-#         s = smtplib.SMTP('localhost')
-#         s.send_message(msg)
-#         s.quit()
-#     else:
-#         print(f"Today's word is {random_word}")
-#         print()
-#         print("And today's quote is: ")
-#         print(quote)
+    searchbar = browser.find_element_by_xpath("//input[@id='twotabsearchtextbox']")
+    searchbar.send_keys(title.strip())
+    browser.find_element_by_xpath("//input[@id='nav-search-submit-button']").click()
+    time.sleep(5)
+    browser.find_element_by_xpath("//div[@cel_widget_id='MAIN-SEARCH_RESULTS-2']").click()
+    time.sleep(5)
+    browser.close()
+
+    
 
 
 
 def main():
-    random_word, html = pick_word()
-    quote = pick_quote(html)
-    print(f"Today's word is {random_word}.")
-    print()
-    print("And today's quote is:\n")
-    print(quote)
+    get_recent_read()
+    # if not user_selection:
+    #     # if get_recent_read() returns an empty string, go ahead with generating a random quote
+    #     random_word, html = pick_word()
+    #     quote = pick_quote(html)
+    #     print(f"Today's word is {random_word}.")
+    #     print()
+    #     print("And today's quote is:\n")
+    #     print(quote)
+    
+    # else:
 
 
     # print("Your word was: "+random_word)
