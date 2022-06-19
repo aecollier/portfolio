@@ -3,23 +3,22 @@
 ## TouchDesigner
 
 Persistent lines:
-[Below](https://github.com/aecollier/portfolio/blob/main/stoch_aesthetic.tox) uses pixel and compute shaders to do a bit more complicated work, where I've been learning how to make lines between points persist over time. Technically brute-forcing this a bit, as I'm checking all points with all points and then throwing out connections conditionally, hence the small number of points.
+The project below uses pixel and compute shaders, as I've been learning how to make connections between points persist over time. Technically brute-forcing this a bit, as I'm checking all points with all points and then throwing out lines conditionally, hence the small number of points. Find the [project file here](https://github.com/aecollier/portfolio/blob/main/stoch_aesthetic.tox). 
 
 driveId: 1hac0CFLTPYplQfH0SegZZ6yzUpf_jWvu/preview
 
 {% include googleDrivePlayer.html id= page.driveId %}
 
-Webcam GLSL lines project:
-[Here's](https://github.com/aecollier/portfolio/blob/updates/webcam_lines.tox) the network used to make the webcam project above, using several pixel shaders.
+The project above was the first iteration of working with lines, using several pixel shaders. [Test it out here!](https://github.com/aecollier/portfolio/blob/updates/webcam_lines.tox)
 
 
-## Python code
-Here's my python code! This project is...
+## Python code - quote generator
+My work has been a lot of web scraping recently, here's just a silly piece of code. This program either generates a random quote from goodreads based on a random positive word, or else takes user input of a recent read to generate a recent quote and ranks how good of a match it was. I've got a more complex and robust web scraper in production from my work with Old Town Shops which I would be thrilled to tell you more about as well. 
 
 
 ## D3 Squirrel Census Modeling
 
 ![image](https://user-images.githubusercontent.com/63130693/117375435-d1476d00-ae83-11eb-9c4c-916c8034225f.png)
 
-This is my feature project from learning D3.js, an open-source data viz tool. Interact with it [here](https://observablehq.com/@aecollier/sqrrules), and a number of other interactive visualizations about squirrels in Central Park! 
+This was a feature project from learning D3.js, an open-source data viz tool. I like that it shows my learning process, even though it's a different language. Interact with it [here](https://observablehq.com/@aecollier/sqrrules), and a number of other interactive visualizations about squirrels in Central Park! 
 
