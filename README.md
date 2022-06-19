@@ -16,6 +16,10 @@ driveId: 1hac0CFLTPYplQfH0SegZZ6yzUpf_jWvu/preview
 
 Here's a more complicated compute shader network, where I've been learning how to make lines between points persist. Technically brute-forcing this a bit, as I'm checking all points with all points and then throwing out connections conditionally, hence the small number of points.
 
+driveId: 1Z-zn3bzbQLgpV0CaVBmTbObReLbewZfo/preview
+
+{% include googleDrivePlayer.html id= page.driveId %}
+
 ## Python code
 Here's my python code! This project is...
 
