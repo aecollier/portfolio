@@ -1,11 +1,5 @@
 # Creative Coding Portfolio
 
-## D3 Squirrel Census Modeling
-
-![image](https://user-images.githubusercontent.com/63130693/117375435-d1476d00-ae83-11eb-9c4c-916c8034225f.png)
-
-This is my feature project from learning D3.js, an open-source data viz tool. Interact with it [here](https://observablehq.com/@aecollier/sqrrules), and a number of other interactive visualizations about squirrels in Central Park! 
-
 ## TouchDesigner
 
 Webcam GLSL lines project:
@@ -27,4 +21,11 @@ driveId: 1Z-zn3bzbQLgpV0CaVBmTbObReLbewZfo/preview
 
 ## Python code
 Here's my python code! This project is...
+
+
+## D3 Squirrel Census Modeling
+
+![image](https://user-images.githubusercontent.com/63130693/117375435-d1476d00-ae83-11eb-9c4c-916c8034225f.png)
+
+This is my feature project from learning D3.js, an open-source data viz tool. Interact with it [here](https://observablehq.com/@aecollier/sqrrules), and a number of other interactive visualizations about squirrels in Central Park! 
 
