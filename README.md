@@ -3,14 +3,14 @@
 ## TouchDesigner
 
 Persistent lines:
-[Here's](https://github.com/aecollier/portfolio/blob/main/stoch_aesthetic.tox) a more complicated compute shader network, where I've been learning how to make lines between points persist. Technically brute-forcing this a bit, as I'm checking all points with all points and then throwing out connections conditionally, hence the small number of points.
+[Below](https://github.com/aecollier/portfolio/blob/main/stoch_aesthetic.tox) uses pixel and compute shaders to do a bit more complicated work, where I've been learning how to make lines between points persist over time. Technically brute-forcing this a bit, as I'm checking all points with all points and then throwing out connections conditionally, hence the small number of points.
 
 driveId: 1hac0CFLTPYplQfH0SegZZ6yzUpf_jWvu/preview
 
 {% include googleDrivePlayer.html id= page.driveId %}
 
 Webcam GLSL lines project:
-[Here's](https://github.com/aecollier/portfolio/blob/updates/webcam_lines.tox) the network used to make this, using several pixel shaders.
+[Here's](https://github.com/aecollier/portfolio/blob/updates/webcam_lines.tox) the network used to make the webcam project above, using several pixel shaders.
 
 
 ## Python code
