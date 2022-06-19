@@ -3,17 +3,13 @@
 ## TouchDesigner
 
 Webcam GLSL lines project:
+[Here's](https://github.com/aecollier/portfolio/blob/updates/webcam_lines.tox) the network used to make this, using several pixel shaders.
+
 driveId: 1hac0CFLTPYplQfH0SegZZ6yzUpf_jWvu/preview
 
 {% include googleDrivePlayer.html id= page.driveId %}
 
-[Here's](https://github.com/aecollier/portfolio/blob/updates/webcam_lines.tox) the network used to make this, using several pixel shaders.
-
-
-Persistent lines;
-driveId: 1Z-zn3bzbQLgpV0CaVBmTbObReLbewZfo/preview
-
-{% include googleDrivePlayer.html id= page.driveId %}
+Persistent lines:
 
 [Here's](https://github.com/aecollier/portfolio/blob/main/stoch_aesthetic.tox) a more complicated compute shader network, where I've been learning how to make lines between points persist. Technically brute-forcing this a bit, as I'm checking all points with all points and then throwing out connections conditionally, hence the small number of points.
 
