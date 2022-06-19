@@ -27,6 +27,8 @@ def pick_word():
     search.send_keys(random_word)
     browser.find_element_by_xpath("//input[@name='commit']").click()
     time.sleep(4)
+    #random_word = 'jubilant'
+    #browser.get('https://www.goodreads.com/quotes/search?utf8=%E2%9C%93&q=jubilant&commit=Search')
     html = browser.page_source
     browser.close()
     return random_word, html
@@ -36,37 +38,47 @@ def pick_quote(html):
     quotes = soup.find_all('div', class_='quoteText')
     random_int = random.randint(0,19)
     random_quote = quotes[random_int]
-    quote = random_quote.text
-    print(quote)
-    with open('daily_quote.txt','w', encoding="utf-8") as fp:
-        fp.write(quote)
+    author = random_quote.find('span', class_='authorOrTitle')
+    work = random_quote.find('a', class_='authorOrTitle')
+    quote_extras = random_quote.text.strip().split('―')
+    quote = quote_extras[0]+'\n ―'
+    if author:
+        quote += ' '+author.text.strip()
+    if work:
+        quote += ' '+work.text.strip()
+
+    # with open('daily_quote.txt','w', encoding="utf-8") as fp:
+    #     fp.write(quote)
     return(quote)
 
 
-def send_email(random_word, quote):
-    reciever = input("Please enter your email address, or hit enter to print today's quote! ")
-    if reciever:
-        with open('daily_quote.txt', 'r', encoding="utf-8") as fp:
-            msg = EmailMessage()
-            msg.set_content(fp.read())
-        msg['Subject'] = f"Today's word is {random_word}"
-        msg['From'] = 'dailyquotesac@gmail.com'
-        msg['To'] = reciever
-        s = smtplib.SMTP('localhost')
-        s.send_message(msg)
-        s.quit()
-    else:
-        print(f"Today's word is {random_word}")
-        print()
-        print("And today's quote is: ")
-        print(quote)
+# def send_email(random_word, quote):
+#     reciever = input("Please enter your email address, or hit enter to print today's quote! ")
+#     if reciever:
+#         with open('daily_quote.txt', 'r', encoding="utf-8") as fp:
+#             msg = EmailMessage()
+#             msg.set_content(fp.read())
+#         msg['Subject'] = f"Today's word is {random_word}"
+#         msg['From'] = 'dailyquotesac@gmail.com'
+#         msg['To'] = reciever
+#         s = smtplib.SMTP('localhost')
+#         s.send_message(msg)
+#         s.quit()
+#     else:
+#         print(f"Today's word is {random_word}")
+#         print()
+#         print("And today's quote is: ")
+#         print(quote)
 
 
 
 def main():
     random_word, html = pick_word()
     quote = pick_quote(html)
-    send_email(random_word, quote)
+    print(f"Today's word is {random_word}.")
+    print()
+    print("And today's quote is:\n")
+    print(quote)
 
 
     # print("Your word was: "+random_word)
