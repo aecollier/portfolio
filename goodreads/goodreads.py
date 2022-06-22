@@ -31,7 +31,7 @@ def init_browser(no_show):
     '''
     Helper function for setting up a webdriver.
     Parameters:
-        no_show: a boolean representing whether or not the user wants to see the
+        no_show: a boolean representing whether or not the user wants to see the web scraper run
     '''
     if no_show:
         # if the user doesn't want to watch the scraper run, we set the driver to headless, so no window pops up. 
@@ -58,7 +58,7 @@ def get_recent_read(no_show):
     Asks for user input of a book title and scrapes the book description from Goodreads.
     Returns a tuple of the title the user entered and the scraped description.
     Parameters:
-        no_show: 
+        no_show: a boolean representing whether or not the user wants to see the web scraper run
     '''
     book_title = input("Enter a book you've enjoyed recently, or hit enter for a random quote: ")
     if not book_title:
@@ -129,6 +129,9 @@ def pick_quote(random_word, no_show):
     '''
     Takes a word either generated at random or parsed from the user's book selection. 
     Searches Goodreads Quotes for this word and returns the top quote that's tagged with this word. 
+    Parameters:
+        no_show: a boolean representing whether or not the user wants to see the web scraper run
+    Returns: string representing a quote scraped from Goodreads. 
     '''
     # intialize chrome webdriver
     browser = init_browser(no_show)
