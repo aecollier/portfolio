@@ -20,5 +20,5 @@ I've got a more complex and robust web scraper in production from my work with O
 
 ![image](https://user-images.githubusercontent.com/63130693/117375435-d1476d00-ae83-11eb-9c4c-916c8034225f.png)
 
-This was a feature project from learning D3.js, an open-source data viz tool. I like that it shows my learning process, even though it's a different language. Interact with it [here](https://observablehq.com/@aecollier/sqrrules), and a number of other interactive visualizations about squirrels in Central Park! 
+This was a feature project from learning D3.js, an open-source data viz tool. I like that it shows my exploration process, even though it's a different language. Interact with it [here](https://observablehq.com/@aecollier/sqrrules), and a number of other interactive visualizations about squirrels in Central Park! 
 
