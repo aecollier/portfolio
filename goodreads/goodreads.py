@@ -24,6 +24,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 
 
@@ -69,20 +71,19 @@ def get_recent_read(no_show):
     browser = init_browser(no_show)
     print('Fetching your book from goodreads!')
     browser.get('https://www.goodreads.com/quotes')
-    time.sleep(3) # Ensure page loads
 
     # Find search elements
-    search_input = browser.find_element(by = By.XPATH, value = "//input[@name='q']")
-    submit_button = browser.find_element(by=By.XPATH, value = "//button[@aria-label='Search']")
+    search_input = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.XPATH, "//input[@name='q']")))
+    submit_button = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.XPATH, "//button[@aria-label='Search']")))
 
     # Input book title and click search icon
     search_input.send_keys(book_title) 
     submit_button.click()
-    time.sleep(2)
 
     # Once on new page, click on the first book title
-    browser.find_element(by=By.XPATH, value = "//a[@class='bookTitle']").click()
-    time.sleep(5)
+    page_title = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.XPATH, "//a[@class='bookTitle']")))
+    page_title.click()
+    time.sleep(5) # ensure page loads all elements
 
     # turn browser html into a Beautiful soup object for further parsing.
     soup = soupify(browser)
@@ -138,16 +139,15 @@ def pick_quote(random_word, no_show):
     browser = init_browser(no_show)
     print("Picking a quote from Goodreads!")
     browser.get('https://www.goodreads.com/quotes')
-    time.sleep(3) # ensure page loads
     
     # find search elements
-    search_input = browser.find_element(by=By.XPATH, value="//input[@id='explore_search_query']") # even though this looks similar to the function above, the elements are named differently so have to do it again. 
-    submit_button = browser.find_element(by=By.XPATH, value = "//input[@name='commit']")
+    search_input = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.XPATH, "//input[@id='explore_search_query']")))
+    submit_button = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.XPATH, "//input[@name='commit']")))
 
     # send word and click submit button
-    search_input.click().send_keys(random_word)
+    search_input.send_keys(random_word)
     submit_button.click()
-    time.sleep(4)
+    time.sleep(4) # ensure page loads all elements
 
     # get page html and extract quote
     soup = soupify(browser)
