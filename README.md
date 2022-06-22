@@ -13,7 +13,9 @@ The project above was the first iteration of working with lines, using several p
 
 
 ## Python code - quote generator
-I've got a more complex and robust web scraper in production from my work with Old Town Shops which I would be thrilled to tell you more about -- here's a silly scraping exercise in the meantime. This program either generates a random quote from goodreads based on a random positive word, or else takes user input of a recent read to generate a random quote related to it. I would continue developing this by added custom error handling, as selenium is very reliant on pages loading properly and consistently, as well as writing tests to catch cases when pieces don't load or can't be found and making it a more robust application. 
+I've got a more complex and robust web scraper in production from my work with Old Town Shops which I would be thrilled to tell you more about -- here's a silly scraping exercise to show you what I've been working on in the meantime. This program either generates a random quote from goodreads based on a random positive word, or else takes user input of a recent read to generate a random quote related to it. I would continue developing this by added custom error handling, as selenium is very reliant on pages loading properly and consistently, as well as writing tests and speeding up the scraping.
+You can download the files and requirements.txt from the goodreads folder in my repo, or you can [![open the projectin Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#<your-project-url>).
+
 
 
 ## D3 Squirrel Census Modeling
