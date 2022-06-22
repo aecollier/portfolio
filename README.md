@@ -13,7 +13,7 @@ The project above was the first iteration of working with lines, using several p
 
 
 ## Python code - quote generator
-My work has been a lot of web scraping recently, here's just a silly piece of code. This program either generates a random quote from goodreads based on a random positive word, or else takes user input of a recent read to generate a recent quote and ranks how good of a match it was. I've got a more complex and robust web scraper in production from my work with Old Town Shops which I would be thrilled to tell you more about as well. 
+I've got a more complex and robust web scraper in production from my work with Old Town Shops which I would be thrilled to tell you more about -- here's a silly scraping exercise in the meantime. This program either generates a random quote from goodreads based on a random positive word, or else takes user input of a recent read to generate a random quote related to it. I would continue developing this by added custom error handling, as selenium is very reliant on pages loading properly and consistently, as well as writing tests to catch cases when pieces don't load or can't be found and making it a more robust application. 
 
 
 ## D3 Squirrel Census Modeling
