@@ -14,8 +14,11 @@ The project above was the first iteration of working with lines, using several p
 
 ## Python code - quote generator
 I've got a more complex and robust web scraper in production from my work with Old Town Shops which I would be thrilled to tell you more about -- here's a silly scraping exercise to show you what I've been working on in the meantime. This program either generates a random quote from goodreads based on a random positive word, or else takes user input of a recent read to generate a random quote related to it. I would continue developing this by adding custom error handling, as selenium is very reliant on pages loading properly and consistently, as well as writing tests and speeding up the scraping.
-You can download the files and requirements.txt from the [goodreads folder in my repo](https://github.com/aecollier/portfolio/tree/main/goodreads). 
-
+The files are in[goodreads folder in my repo](https://github.com/aecollier/portfolio/tree/main/goodreads). Install dependencies and run the web scraper with:
+```
+pip install -r requirements.txt
+python3 goodreads.py
+```
 
 ## D3 Squirrel Census Modeling
 
