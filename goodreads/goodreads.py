@@ -39,7 +39,7 @@ def init_browser(no_show):
         chrome_options.add_argument("--headless")
         browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
     else:
-        # otherwise, invoke webdriver which defaults to showing window as it scrapes.
+        # otherwise, invoke webdriver which defaults to showing the window as it scrapes.
         browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
     return browser
 
@@ -47,7 +47,7 @@ def soupify(browser):
     '''
     Helper function for converting page to beautiful soup object.
     Parameters:
-        browser: a selenium webdriver
+        browser: a selenium webdriver instance 
     '''
     html = browser.page_source
     soup = BeautifulSoup(html, features = 'lxml')
@@ -64,11 +64,11 @@ def get_recent_read(no_show):
     if not book_title:
        return ''
     
-    # intialize chrome webdriver
+    # initialize chrome webdriver
     browser = init_browser(no_show)
     print('Fetching your book from goodreads!')
     browser.get('https://www.goodreads.com/quotes')
-    time.sleep(3) # wait for page to load
+    time.sleep(3) # Ensure page loads
 
     # Find search elements
     search_input = browser.find_element(by = By.XPATH, value = "//input[@name='q']")
@@ -79,7 +79,7 @@ def get_recent_read(no_show):
     submit_button.click()
     time.sleep(2)
 
-    # Once on new page, find and click on the book title
+    # Once on new page, click on the first book title
     browser.find_element(by=By.XPATH, value = "//a[@class='bookTitle']").click()
     time.sleep(5)
 
@@ -143,7 +143,7 @@ def pick_quote(random_word, no_show):
     search_input = browser.find_element(by=By.XPATH, value="//input[@id='explore_search_query']") # have to do this again because the elements are different names
     submit_button = browser.find_element(by=By.XPATH, value = "//input[@name='commit']")
 
-    # send random word and click submit button
+    # send word and click submit button
     search_input.click().send_keys(random_word)
     submit_button.click()
     time.sleep(4)
