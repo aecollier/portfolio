@@ -121,8 +121,7 @@ def pick_quote(random_word, headless):
     soup = soupify(browser)
     browser.close()
     quotes = soup.find_all('div', class_='quoteText')
-    random_quote = quotes[0]
-    quote = random_quote.text.strip()
+    quote = quotes[0].text.strip()
     return(quote)
 
 def main():
